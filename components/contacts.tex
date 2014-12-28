@@ -1,0 +1,44 @@
+\makeheading{M. Ismail Faruqi, S.T., M.Sc}
+
+\section{Contact Information}
+
+% NOTE: Mind where the & separators and \\ breaks are in the following
+%       table. Table is one row made up of three parboxes. The left
+%       parbox has address info, the middle parbox has a vertical bar,
+%       and the right parbox has phone and electronic contact
+%       information.
+%
+% MACROS: \rcollength is the width of the right column of the table
+%             (adjust it to your liking; default is 1.85in).
+%         \spacewidth is width of area between left and right boxes.
+%
+\newlength{\rcollength}\setlength{\rcollength}{2in}%
+\newlength{\spacewidth}\setlength{\spacewidth}{20pt}
+%
+\begin{tabular}[t]{@{}p{\textwidth-\rcollength-\spacewidth}@{}p{\spacewidth}@{}p{\rcollength}}%
+
+% Address box
+%\parbox{\textwidth-\rcollength-\spacewidth}{%
+%Associate Research Scientist\\
+%\href{http://sols.asu.edu/}{School of Life Sciences}\\
+%\href{http://www.asu.edu/}{Arizona State University}\\
+%PO Box 874501\\
+%Tempe, AZ  85287-4501  USA}
+\parbox{\textwidth-\rcollength-\spacewidth}{%
+MidPlaza 2, 2nd Floor\\
+Jl. Jend. Sudirman Kav. 10-11\\
+Jakarta 10220, Indonesia}
+
+&
+% Uncomment to add a vertical bar in middle of contact information
+% {\vrule width 0.5pt}
+\parbox[m][5\baselineskip]{\spacewidth}{} &
+
+% Non-snail-mail contact information
+\parbox{\rcollength}{%
+\textit{Mobile:} +62-813-1936-3326 \\
+\textit{E-mail:} \email{ismailfaruqi@gmail.com}\\
+%\textit{WWW:} \href{http://www.tedpavlic.com/}{www.tedpavlic.com}
+}
+
+\end{tabular}
